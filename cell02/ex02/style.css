@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+}
+
+.parallax {
+  height: 100vh;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.parallax--header {
+  background-image: url('https://images.pexels.com/photos/8523559/pexels-photo-8523559.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+}
+
+.parallax--footer {
+  background-image: url('https://images.pexels.com/photos/617278/pexels-photo-617278.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+}
+
+.block {
+  height: 600px;
+  background-color: black;
+}
+
+.center {
+  color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
