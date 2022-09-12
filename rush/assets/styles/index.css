@@ -1,0 +1,114 @@
+:root {
+  --color-primary: #2584ff;
+  --color-border: #eee;
+}
+
+ul {
+  list-style: none;
+  padding: 0 !important;
+}
+
+a {
+  text-decoration: none !important;
+  color: black !important;
+}
+
+.page {
+  width: 100vw;
+  height: 100vh;
+  /* background-color: #2584ff; */
+  padding-left: 10rem;
+}
+
+/* Navbar */
+
+.hamburger {
+  position: fixed;
+  z-index: 1000;
+  right: 10px;
+  top: 10px;
+}
+
+.hamburger i {
+  font-size: 25px;
+}
+
+.mobile__nav__item {
+  background-color: var(--color-border);
+  border-radius: 100px;
+  padding: 15px 20px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.mobile__nav__item:hover {
+  color: white;
+  background-color: var(--color-primary);
+}
+
+nav {
+  position: fixed;
+  height: 100vh;
+  padding: 0 1rem;
+}
+
+.nav__item {
+  margin-bottom: 1rem;
+  white-space: nowrap;
+  border-radius: 100px;
+
+  width: 55px;
+  background-color: var(--color-border);
+  overflow: hidden;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.nav__item a {
+  padding: 1rem 1.3rem 1rem 1rem;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+.nav__item i {
+  margin-left: 0.2rem;
+  margin-right: 0.5rem;
+  transition: 0.2s ease-in-out;
+}
+
+.fa-user {
+  position: relative;
+  left: 1px;
+}
+
+.nav__item span {
+  display: none;
+}
+
+.nav__item:hover {
+  width: 100%;
+  background-color: orange;
+}
+
+.nav__item:hover i {
+  background-color: orange;
+}
+
+.nav__item:hover span {
+  display: inline-block;
+}
+
+/* Home */
+
+#home {
+  background-image: url('../images/human-2.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+
+/* About */
+
+#about {
+  background-color: aqua;
+}
