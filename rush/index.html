@@ -114,19 +114,21 @@
     <!------- End Navbar -------->
 
     <!------- Home -------->
-    <div id="home" class="page">
+    <section id="home" class="page">
       <div class="home__content">
-        <h1>Zantaclaus</h1>
+        <h1 onclick="randomColor('name')" id="name" class="pointer">
+          Zantaclaus
+        </h1>
         <p>I'm a Frontend Developer</p>
       </div>
-    </div>
+    </section>
     <!------- End Home -------->
 
     <!------- About -------->
-    <div id="about" class="page container-lg">
+    <section id="about" class="container-lg">
       <div class="header">
         <h2>ABOUT</h2>
-        <p>
+        <p class="tagline">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia,
           laboriosam voluptatum doloremque suscipit
         </p>
@@ -172,145 +174,206 @@
           </div>
         </div>
       </div>
+    </section>
+    <!------- End About -------->
 
-      <!------- Skill -------->
-      <section class="skill">
-        <div class="container-lg">
-          <div class="header">
-            <h2>SKILL</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia,
-              laboriosam voluptatum
-            </p>
+    <!------- Exprerience -------->
+    <section class="experiance">
+      <div class="container-lg">
+        <div class="header">
+          <h2>Experiance</h2>
+          <p class="tagline">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia,
+            laboriosam voluptatum
+          </p>
+        </div>
+
+        <div class="experiance__box">
+          <ol>
+            <li>
+              <h3>SENIOR GRAPHIC DESIGN SPECIALIST</h3>
+              <p>Experion, New York, NY</p>
+              <ul>
+                <li>
+                  Lead in the
+                  <span
+                    >design, development, and implementation of the graphic </span
+                  >, layout, and production communication materials
+                </li>
+                <li>
+                  Delegate tasks to the
+                  <span>7 members of the design team</span> and provide counsel
+                  on all aspects of the project.
+                </li>
+                <li>
+                  <span>Supervise the assessment of all graphic materials</span>
+                  in order to ensure quality and accuracy of the design
+                </li>
+              </ul>
+            </li>
+
+            <li>
+              <h3>GRAPHIC DESIGN SPECIALIST</h3>
+              <p>Stepping Stone Advertising, New York, NY</p>
+              <ul>
+                <li>
+                  <span>Developed numerous marketing programs </span> (logos,
+                  brochures, infographics, presentations, and advertisements).
+                </li>
+                <li>
+                  Managed up to <span>5 projects or tasks </span>at a given time
+                  while under pressure
+                </li>
+                <li>
+                  Recommended and consulted with clients on the most
+                  <span> appropriate graphic design</span>
+                </li>
+              </ul>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+    <!------- End Skill -------->
+
+    <!------- Skill -------->
+    <section class="skill">
+      <div class="container-lg">
+        <div class="header">
+          <h2>SKILL</h2>
+          <p class="tagline">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia,
+            laboriosam voluptatum
+          </p>
+        </div>
+
+        <div class="progress__container">
+          <div class="progress__bar">
+            <div class="d-flex justify-content-between">
+              <h6>HTML</h6>
+              <h6>100%</h6>
+            </div>
+            <div class="progress">
+              <div
+                class="progress-bar progress-bar-striped progress--html progress-bar-animated"
+                role="progressbar"
+                aria-label="Default striped example"
+                aria-valuenow="10"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                style="width: 100%"
+              ></div>
+            </div>
           </div>
 
-          <div class="progress__container">
-            <div class="progress__bar">
-              <div class="d-flex justify-content-between">
-                <h6>HTML</h6>
-                <h6>100%</h6>
-              </div>
-              <div class="progress">
-                <div
-                  class="progress-bar progress-bar-striped progress--html"
-                  role="progressbar"
-                  aria-label="Default striped example"
-                  aria-valuenow="10"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                  style="width: 100%"
-                ></div>
-              </div>
+          <div class="progress__bar">
+            <div class="d-flex justify-content-between">
+              <h6>CSS</h6>
+              <h6>100%</h6>
             </div>
-
-            <div class="progress__bar">
-              <div class="d-flex justify-content-between">
-                <h6>CSS</h6>
-                <h6>100%</h6>
-              </div>
-              <div class="progress">
-                <div
-                  class="progress-bar progress-bar-striped progress--html"
-                  role="progressbar"
-                  aria-label="Default striped example"
-                  aria-valuenow="10"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                  style="width: 100%"
-                ></div>
-              </div>
+            <div class="progress">
+              <div
+                class="progress-bar progress-bar-striped progress--html progress-bar-animated"
+                role="progressbar"
+                aria-label="Default striped example"
+                aria-valuenow="10"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                style="width: 100%"
+              ></div>
             </div>
+          </div>
 
-            <div class="progress__bar">
-              <div class="d-flex justify-content-between">
-                <h6>JS</h6>
-                <h6>100%</h6>
-              </div>
-              <div class="progress">
-                <div
-                  class="progress-bar progress-bar-striped progress--html"
-                  role="progressbar"
-                  aria-label="Default striped example"
-                  aria-valuenow="10"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                  style="width: 100%"
-                ></div>
-              </div>
+          <div class="progress__bar">
+            <div class="d-flex justify-content-between">
+              <h6>JS</h6>
+              <h6>100%</h6>
             </div>
-
-            <div class="progress__bar">
-              <div class="d-flex justify-content-between">
-                <h6>React JS</h6>
-                <h6>100%</h6>
-              </div>
-              <div class="progress">
-                <div
-                  class="progress-bar progress-bar-striped progress--html"
-                  role="progressbar"
-                  aria-label="Default striped example"
-                  aria-valuenow="10"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                  style="width: 100%"
-                ></div>
-              </div>
+            <div class="progress">
+              <div
+                class="progress-bar progress-bar-striped progress--html progress-bar-animated"
+                role="progressbar"
+                aria-label="Default striped example"
+                aria-valuenow="10"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                style="width: 100%"
+              ></div>
             </div>
+          </div>
 
-            <div class="progress__bar">
-              <div class="d-flex justify-content-between">
-                <h6>Node.js</h6>
-                <h6>100%</h6>
-              </div>
-              <div class="progress">
-                <div
-                  class="progress-bar progress-bar-striped progress--html"
-                  role="progressbar"
-                  aria-label="Default striped example"
-                  aria-valuenow="10"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                  style="width: 100%"
-                ></div>
-              </div>
+          <div class="progress__bar">
+            <div class="d-flex justify-content-between">
+              <h6>React JS</h6>
+              <h6>100%</h6>
             </div>
+            <div class="progress">
+              <div
+                class="progress-bar progress-bar-striped progress--html progress-bar-animated"
+                role="progressbar"
+                aria-label="Default striped example"
+                aria-valuenow="10"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                style="width: 100%"
+              ></div>
+            </div>
+          </div>
 
-            <div class="progress__bar">
-              <div class="d-flex justify-content-between">
-                <h6>Docker</h6>
-                <h6>100%</h6>
-              </div>
-              <div class="progress">
-                <div
-                  class="progress-bar progress-bar-striped progress--html"
-                  role="progressbar"
-                  aria-label="Default striped example"
-                  aria-valuenow="10"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                  style="width: 100%"
-                ></div>
-              </div>
+          <div class="progress__bar">
+            <div class="d-flex justify-content-between">
+              <h6>Node.js</h6>
+              <h6>100%</h6>
+            </div>
+            <div class="progress">
+              <div
+                class="progress-bar progress-bar-striped progress--html progress-bar-animated"
+                role="progressbar"
+                aria-label="Default striped example"
+                aria-valuenow="10"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                style="width: 100%"
+              ></div>
+            </div>
+          </div>
+
+          <div class="progress__bar">
+            <div class="d-flex justify-content-between">
+              <h6>Docker</h6>
+              <h6>100%</h6>
+            </div>
+            <div class="progress">
+              <div
+                class="progress-bar progress-bar-striped progress--html progress-bar-animated"
+                role="progressbar"
+                aria-label="Default striped example"
+                aria-valuenow="10"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                style="width: 100%"
+              ></div>
             </div>
           </div>
         </div>
-      </section>
-    </div>
-
-    <!------- End About -------->
+      </div>
+    </section>
+    <!------- End Skill -------->
 
     <!------- Contact -------->
-    <div id="contact" class="container-lg">
+    <section id="contact" class="container-lg">
       <div class="header">
         <h2>CONTACT</h2>
-        <p>
+        <p class="tagline">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia,
           laboriosam voluptatum
         </p>
       </div>
       <div class="contact__container">
         <div class="contact__info">
-          <i class="fa-solid fa-location-dot"></i>
+          <div onclick="randomColor('location')" class="pointer">
+            <i class="fa-solid fa-location-dot" id="location"></i>
+          </div>
           <div class="contact__detail">
             <h6>Location</h6>
             <p>A108 Street, New York, NY 535022</p>
@@ -318,7 +381,9 @@
         </div>
 
         <div class="contact__info">
-          <i class="fa-regular fa-envelope"></i>
+          <div onclick="randomColor('mail')" class="pointer">
+            <i class="fa-regular fa-envelope" id="mail"></i>
+          </div>
           <div class="contact__detail">
             <h6>Email</h6>
             <p>zantaclaus@napat.com</p>
@@ -326,20 +391,23 @@
         </div>
 
         <div class="contact__info">
-          <i class="fa-solid fa-mobile"></i>
+          <div onclick="randomColor('phone')" class="pointer">
+            <i class="fa-solid fa-mobile" id="phone"></i>
+          </div>
           <div class="contact__detail">
             <h6>Call</h6>
             <p>+66 97-123-4567</p>
           </div>
         </div>
       </div>
-    </div>
+    </section>
     <!------- End Contact -------->
 
+    <!------- Footer -------->
     <footer>
       <div class="container-lg p-4">
         <div class="footer__header">
-          <h2>Zantaclaus</h2>
+          <h2 onclick="addCount()" class="pointer">Zantaclaus</h2>
           <p>Lorem ipsum dolor sit amet.</p>
         </div>
 
@@ -368,6 +436,7 @@
         </p>
       </div>
     </footer>
+    <!------- End Footer -------->
 
     <!-- JS -->
     <script src="/assets/js/index.js"></script>

@@ -7,6 +7,8 @@
 * {
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
+  user-select: none;
+  -webkit-user-select: none; /* Safari */
 }
 
 ul {
@@ -49,6 +51,10 @@ a {
 .header p {
   text-align: center;
   font-size: 0.8rem;
+}
+
+.pointer {
+  cursor: pointer;
 }
 
 /* Navbar */
@@ -170,7 +176,7 @@ nav {
   letter-spacing: 0.5rem;
 }
 
-@media screen and (min-width: 762px) {
+@media screen and (min-width: 992px) {
   #home {
     background-position: top;
     padding-left: 16rem;
@@ -252,10 +258,9 @@ nav {
   transform: scale(1.05);
 }
 
-@media screen and (min-width: 762px) {
+@media screen and (min-width: 992px) {
   #about {
     padding-top: 5rem;
-    padding-bottom: 10rem;
   }
 
   .about__information {
@@ -274,6 +279,31 @@ nav {
   }
 }
 
+/* Experiance */
+
+.experiance__box h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-top: 1rem;
+  color: var(--color-primary);
+}
+
+.experiance__box ul {
+  list-style: circle;
+}
+
+.experiance__box li span {
+  color: var(--color-primary);
+}
+
+@media screen and (min-width: 992px) {
+  .experiance__box ol {
+    padding: 30px;
+    display: flex;
+    gap: 3rem;
+  }
+}
+
 /* Skill */
 
 /* .skill {
@@ -286,7 +316,7 @@ nav {
   gap: 1rem;
 }
 
-@media screen and (min-width: 762px) {
+@media screen and (min-width: 992px) {
   .skill {
     padding-top: 5rem;
   }
@@ -337,7 +367,7 @@ nav {
   font-size: 0.8rem;
 }
 
-@media screen and (min-width: 762px) {
+@media screen and (min-width: 768px) {
   #contact {
     padding-bottom: 10rem;
   }
@@ -410,4 +440,10 @@ footer {
 .copyright {
   font-size: 0.8rem;
   text-align: center;
+}
+
+@media screen and (min-width: 992px) {
+  .tagline {
+    font-size: 1rem !important;
+  }
 }
