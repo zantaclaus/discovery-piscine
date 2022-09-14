@@ -66,8 +66,10 @@ a {
 /* First page */
 
 .body__image {
-  background-image: url('../images/bg.jpg');
-  background-repeat: none;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('../images/zan-bg.jpg');
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: right;
   backdrop-filter: brightness(40%);
