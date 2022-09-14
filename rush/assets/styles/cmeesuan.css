@@ -604,7 +604,6 @@ footer {
   background-clip: text;
   -webkit-background-clip: text;
   -moz-background-clip: text;
-  background-clip: text;
   color: transparent;
   background-size: 400%;
   animation: header-bg-animation 1s infinite alternate;
