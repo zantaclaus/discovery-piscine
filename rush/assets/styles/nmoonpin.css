@@ -257,6 +257,12 @@ nav {
   align-items: center;
 }
 
+#home.pat__home {
+  background-image: url('../images/napat.jpg');
+  background-size: cover;
+  background-position: 50%;
+}
+
 #home::before {
   content: '';
   background-color: rgba(255, 255, 255, 0.5);
@@ -282,14 +288,18 @@ nav {
   letter-spacing: 0.5rem;
 }
 
+.home__content p {
+  text-align: center;
+}
+
 @media screen and (min-width: 992px) {
   #home {
     background-position: top;
-    padding-left: 16rem;
   }
 
   .home__content {
-    width: fit-content;
+    /* background-color: #2584ff !important; */
+    /* width: fit-content; */
   }
 
   .home__content h1 {
@@ -298,6 +308,10 @@ nav {
 
   .home__content p {
     font-size: 1.5rem;
+  }
+
+  #home.pat__home {
+    background-position: top;
   }
 }
 
@@ -311,7 +325,16 @@ nav {
 .about__img {
   width: 100%;
   height: 400px;
-  background-image: url('../images/human-5.webp');
+  background-image: url('../images/human-1.jpg');
+  background-size: contain;
+  background-position: center;
+  overflow: hidden;
+}
+
+.about__img.pat__img {
+  width: 100%;
+  height: 500px;
+  background-image: url('../images/napat-2.jpg');
   background-size: cover;
   background-position: center;
   overflow: hidden;
@@ -382,6 +405,15 @@ nav {
   .about__img {
     width: 400px;
     height: 475px;
+  }
+
+  .about__img.pat__img {
+    width: 50%;
+    height: 480px;
+    background-image: url('../images/napat-2.jpg');
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
   }
 }
 
@@ -455,6 +487,11 @@ nav {
   padding-top: 12px;
   padding-left: 15px;
   width: 28px;
+}
+
+.contact__info.pat__anima i:hover {
+  transform: scale(1.25);
+  color: red;
 }
 
 .contact__info .fa-envelope {
