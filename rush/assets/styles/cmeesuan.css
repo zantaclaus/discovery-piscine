@@ -71,6 +71,7 @@ a {
   background-size: cover;
   background-position: right;
   backdrop-filter: brightness(40%);
+  -webkit-backdrop-filter: brightness(40%);
 }
 
 .navigation__page {
