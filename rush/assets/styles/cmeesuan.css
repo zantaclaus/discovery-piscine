@@ -620,6 +620,45 @@ footer {
   color: #155dba;
 }
 
-.offcanvas.show {
+.offcanvas.offcanvas-start {
   width: 100vw !important;
+}
+
+.offcanvas.show {
+  z-index: 10000;
+  width: 100vw !important;
+}
+
+/*
+ * Disable scrollbar
+ */
+
+/* - Chrome Safari Edge */
+*::-webkit-scrollbar {
+  /* width: 4px !important; */
+  width: 0 !important;
+}
+
+*::-webkit-scrollbar-thumb {
+  /* background: rgb(88, 89, 91); */
+  background: transparent !important;
+  /* border-radius: 4px; */
+}
+*::-webkit-scrollbar-track {
+  box-shadow: none !important;
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  /* background: rgb(138, 139, 141); */
+  background: transparent !important;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none !important;
+}
+
+.scrollbar-hide {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
