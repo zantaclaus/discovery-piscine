@@ -619,3 +619,7 @@ footer {
 .zantalaus__btn:active {
   color: #155dba;
 }
+
+.offcanvas.show {
+  width: 100vw !important;
+}
