@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .balloon {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background-color: green;
+        transition: all 0.2s ease-in-out;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="balloon" class="balloon" onclick="balloonClicked()"></div>
+
+    <script>
+      function balloonClicked() {
+        const balloon = document.getElementById('balloon');
+        balloon.style.width = window.getComputedStyle(balloon).width;
+        balloon.style.height = window.getComputedStyle(balloon).height + 10;
+        console.log(window.getComputedStyle(balloon).width);
+
+        const color = window.getComputedStyle(balloon).backgroundColor;
+        const colorOptions = {
+          'rgb(255, 0, 0)': 'rgb(0, 128, 0)',
+          'rgb(0, 128, 0)': 'rgb(0, 0, 255)',
+          'rgb(0, 0, 255)': 'rgb(255, 0, 0)',
+        };
+        balloon.style.backgroundColor = colorOptions[color];
+      }
+    </script>
+  </body>
+</html>

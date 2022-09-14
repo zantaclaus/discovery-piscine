@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form id="form" onsubmit="return false">
+      <input type="text" id="number1" />
+
+      <select id="operator">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+        <option value="%">%</option>
+      </select>
+
+      <input type="text" id="number2" />
+
+      <input type="submit" value="Try me!" />
+    </form>
+
+    <script>
+      const form = document.getElementById('form');
+      form.addEventListener('submit', submit);
+
+      setInterval(() => {
+        alert('Please, use me...');
+      }, 30000);
+
+      function submit() {
+        const number1 = document.getElementById('number1').value;
+        const number2 = document.getElementById('number2').value;
+        const operator = document.getElementById('operator').value;
+
+        if (!validate(number1)) {
+          alert('Error :(');
+          console.log('Error :(');
+          return;
+        }
+
+        if (!validate(number2)) {
+          alert('Error :(');
+          console.log('Error :(');
+          return;
+        }
+
+        const result = calculate(number1, number2, operator);
+        console.log(result);
+        alert(result);
+      }
+
+      function validate(str) {
+        if (!str) {
+          return false;
+        }
+
+        const num = Number(str);
+        if (Number.isInteger(num) && num >= 0) {
+          return true;
+        }
+
+        return false;
+      }
+
+      function calculate(a, b, operator) {
+        a = Number(a);
+        b = Number(b);
+
+        if (operator === '+') return a + b;
+        if (operator === '-') return a - b;
+        if (operator === '*') return a * b;
+        if (b == 0) return 'It’s over 9000!';
+        if (operator === '/') return a / b;
+        if (operator === '%') return a % b;
+
+        return 'operator not match';
+      }
+    </script>
+  </body>
+</html>
